@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "20296189278",
+    "firebase_url": "https://pr-localizacion-1-a4fde.firebaseio.com",
+    "project_id": "pr-localizacion-1-a4fde",
+    "storage_bucket": "pr-localizacion-1-a4fde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20296189278:android:bb74909e425c229c",
+        "android_client_info": {
+          "package_name": "com.jesusrodri.localizacionproyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20296189278-drmlifeeua841c660nkgjvfklalqbrbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7lWvTzqXWZ_SBJIPiDhJk_TQJ8Lun8c8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20296189278-drmlifeeua841c660nkgjvfklalqbrbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20296189278:android:f1162e1d423eb4b2",
+        "android_client_info": {
+          "package_name": "com.jesusrodri.localizacionproyecto4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20296189278-drmlifeeua841c660nkgjvfklalqbrbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7lWvTzqXWZ_SBJIPiDhJk_TQJ8Lun8c8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20296189278-drmlifeeua841c660nkgjvfklalqbrbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

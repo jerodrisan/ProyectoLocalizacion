@@ -1,0 +1,358 @@
+<androidx.percentlayout.widget.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!--Importante , ver libreria Percent  para evitar anidamiento de pesos
+	 .Ej: http://code2concept.blogspot.com.es/2015/08/android-percent-support-lib-sample.html-->
+	<LinearLayout
+		android:id="@+id/laysuperizq"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="50%"
+		android:weightSum="2"
+		android:orientation="vertical"
+		android:layout_margin="5dp"
+		>
+
+		<TextView
+			android:id="@+id/Lblusu"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.20"
+			android:background="#9fa8da"
+			android:gravity="left"
+			android:text="User :"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+		<TextView
+			android:id="@+id/Lbl_numRuta"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.20"
+			android:background="#9fa8da"
+			android:gravity="left"
+			android:text="Número de Ruta :"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+
+		<TextView android:id="@+id/LblRuta"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.20"
+			android:textSize="16sp"
+			android:text="@string/rutaXML"
+			android:gravity="left"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/Lbldia"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.20"
+			android:textSize="16sp"
+			android:text="Dia :"
+			android:gravity="left"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblHora"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.20"
+			android:textSize="16sp"
+			android:text="Hora :"
+			android:gravity="left"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/BtnPausar"
+			android:text="Pausar"
+			android:textColor="#000000"
+			android:textSize="25sp"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.5"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#7986CB"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="13"
+			android:layout_marginTop="5dp"
+			android:visibility="gone"
+			/>
+
+		<Button
+			android:id="@+id/BtnActualizar"
+			android:text="@string/empezarruta"
+			android:textColor="#000000"
+			android:textSize="25sp"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@drawable/buttonshape"
+			android:shadowColor="#7986CB"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="13"
+			android:layout_marginTop="5dp"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/laysuperderech"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_toRightOf="@id/laysuperizq"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="50%"
+		android:weightSum="6"
+		android:orientation="vertical"
+		android:layout_margin="5dp"
+		>
+		<TextView android:id="@+id/LblVelo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.7"
+			android:textSize="17sp"
+			android:text="Velocidad"
+			android:gravity="center"
+			android:background="#7986cb"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblVelocidad"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblDistan"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.7"
+			android:textSize="17sp"
+			android:text="Distancia"
+			android:gravity="center"
+			android:background="#7986cb"
+			android:layout_marginTop="5dp"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/lblDistancia"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+
+		<TextView
+			android:id="@+id/LblTiemp"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginTop="5dp"
+			android:layout_weight="0.7"
+			android:background="#7986cb"
+			android:gravity="center"
+			android:text="Tiempo"
+			android:textColor="#000000"
+			android:textSize="17sp" />
+
+		<TextView android:id="@+id/lblTiempoEmpleado"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#9fa8da"
+			android:textColor="#000000" />
+	</LinearLayout>
+
+	<!-- LAYOUTS DEL AMIGO -->
+	<!--LAYOUT INFERIOR IZQUIERDO -->
+	<LinearLayout
+		android:id="@+id/layinfeizq"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_below="@id/laysuperizq"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="50%"
+		android:weightSum="2"
+		android:orientation="vertical"
+		android:layout_margin="5dp"
+		android:visibility="gone"
+		>
+
+		<TextView android:id="@+id/lblAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:textSize="22sp"
+			android:text="User :"
+			android:background="#80cbc4"
+			android:textColor="#000000" />
+
+		<Button android:id="@+id/BtnComenzarAmigo"
+			android:text="Ocultar"
+			android:textColor="#000000"
+			android:textSize="25sp"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:background="@drawable/buttonshapeamigo"
+			android:shadowColor="#4db6ac"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="13"
+			android:layout_marginTop="5dp"  />
+
+	</LinearLayout>
+	<!--LAYOUT INFERIOR DERECHO-->
+	<LinearLayout
+		android:id="@+id/layinfderecho"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_below="@id/laysuperderech"
+		android:layout_toRightOf="@id/layinfeizq"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="50%"
+		android:weightSum="6"
+		android:orientation="vertical"
+		android:layout_margin="5dp"
+		android:visibility="gone"
+		>
+
+		<TextView android:id="@+id/LblVeloAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.7"
+			android:textSize="17sp"
+			android:gravity="center"
+			android:text="Velocidad Media"
+			android:background="#26a69a"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblVelocidadAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#80cbc4"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblDistanAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.7"
+			android:textSize="17sp"
+			android:gravity="center"
+			android:text="Distancia"
+			android:background="#26a69a"
+			android:layout_marginTop="5dp"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/lblDistanciaAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#80cbc4"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/LblTiempAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.7"
+			android:textSize="17sp"
+			android:gravity="center"
+			android:text="Tiempo en mov"
+			android:background="#26a69a"
+			android:layout_marginTop="5dp"
+			android:textColor="#000000" />
+
+		<TextView android:id="@+id/lblTiempoEmpleadoAmigo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1.3"
+			android:textSize="22sp"
+			android:gravity="center"
+			android:background="#80cbc4"
+			android:textColor="#000000" />
+
+	</LinearLayout>
+	<!-- TEXTVIE PARA INDICA QUE SE BUSQUE UN CONTACTO -->
+
+	<LinearLayout
+		android:id="@+id/laytextobuscar"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_below="@id/laysuperizq"
+		app:layout_heightPercent="50%"
+		app:layout_widthPercent="100%"
+		android:orientation="vertical"
+		android:layout_margin="5dp"
+		android:background="#e0e0e0"
+		android:weightSum="1">
+
+		<TextView
+			android:id="@+id/textoprueba"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:text="@string/select_contacto"
+			android:padding="10dp"
+			android:background="#9fa8da"
+			android:textColor="#000000"
+			android:layout_weight="0.20" />
+		<!--
+		<TextView
+			android:id="@+id/textoprueba2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:text="2. Ve a mapas para ver tu localización"
+			android:background="#9fa8da"
+			android:textColor="#000000"
+			android:layout_weight="0.20" />
+		<TextView
+
+			android:id="@+id/textoprueba3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:text="3. Selecciona amigo"
+			android:background="#9fa8da"
+			android:textColor="#000000"
+			android:layout_weight="0.20" />
+
+		<TextView
+
+			android:id="@+id/textoprueba4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:text="4. Ver su localizacion en mapas"
+			android:background="#9fa8da"
+			android:textColor="#000000"
+			android:layout_weight="0.20" />
+		<TextView
+
+			android:id="@+id/textoprueba5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:text="5. Pulsa parar para detener localización"
+			android:background="#9fa8da"
+			android:textColor="#000000"
+			android:layout_weight="0.20" />
+		-->
+	</LinearLayout>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

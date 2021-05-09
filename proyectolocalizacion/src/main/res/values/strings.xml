@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Localiza Cloud</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nombre</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">No eres Miembro? Date de alta.</string>
+    <string name="btn_link_to_login">Ya registrado! Login Me.</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Nombre</string>
+
+    <string name="yaregistrado">Ya registrado? Entra aquí!!</string>
+    <string name="register">REGISTRARSE</string>
+    <string name="nomiembro">No eres miembro? Regístrate aqu!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strigns relativos al resto de la APP -->
+    <string name="centrar_vista">Centrar \n %1$s</string>
+    <string name="dist_entre_2">  Distancia \nentre los dos\n %1$s</string>
+    <string name="select_contacto">1. Pulse "Start" para comenzar una ruta.\n
+        2. Vea su localización en la pestaña Mapa General.\n
+        3. Escoja un contacto de la lista para localizarlo si está online\n
+        4. Para dejar de verlo pulse Ocultar\n
+        5. En opciones puede seleccionar modo coche y activar radares</string>
+    <string name="user">User :%1$s</string>
+    <string name="ruta">Frec GPS :%1$s</string>
+    <string name="numruta">Número de Ruta :%1$s</string>
+    <string name="dia">Dia :%1$s</string>
+    <string name="hora">Hora :%1$s</string>
+
+    <string name="rutaXML">Frecuencia GPS : 12 seg</string>
+
+    <string name="desactivar">Stop</string>
+    <string name="pausar">Pausar</string>
+    <string name="reanudar">Reanudar</string>
+    <string name="empezarruta">Start</string>
+
+    <string name="linkwebapp">http://localiza.atwebpages.com/index.html</string>
+    <string name="correo_mio">chukksiphone@gmail.com</string>
+    <string name="texto_desenganchar">Si no puede entrar en la app movil debido a que sale el siguiente mensaje:
+        "Usted esta logado en otro dispositivo, desconectese y vuelva a intentarlo" ,
+        asegurese de que no esta conectado en otro dispositivo.
+        En caso de no ser asi es posible que se haya quedado enganchada al app por un cierre inesperado.
+        Entre en la web y pulse desenganchar para poder entrar en la app.</string>
+    <string name="texto_ayuda">Contacto con el desarrollador: \n chukksiphone@gmail.com</string>
+    <string name="texto_masopciones">Para gestionar rutas online y ver mas opciones de tus rutas y de tus contactos, entra en la web</string>
+
+
+</resources>

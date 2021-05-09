@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aap="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Seleccionar frecuencia de GPS en seg :"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/texview_frecuencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="hola que tal"
+        android:textSize="25dp"
+        />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id = "@+id/andersSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        aap:dsb_min="3"
+        app:dsb_max="60"
+        />
+
+
+
+
+</LinearLayout>

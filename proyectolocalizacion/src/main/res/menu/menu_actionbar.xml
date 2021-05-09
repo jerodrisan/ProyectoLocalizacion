@@ -1,0 +1,128 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main2Activity">
+    <item android:id="@+id/gestion_mapas"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Gestion Mapas"/>
+
+    <item android:id="@+id/gestion_contactos"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Gestionar contactos" >
+        <menu>
+            <item android:id="@+id/add_contacto"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Añadir contacto" />
+            <item android:id="@+id/delete_amigo"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Quitar Contacto" />
+            <item android:id="@+id/buscar_solicitudes"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Buscar Solicitudes" />
+            <item android:id="@+id/update_contactos"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Actualizar Lista" />
+        </menu>
+  </item>
+
+    <item
+        android:id="@+id/tiporuta"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Frecuencia GPS :">
+        <menu>
+
+        <item android:id="@+id/ruta_coche"
+            android:orderInCategory="100"
+            android:checkable="true"
+            app:showAsAction="never"
+            android:title="Frec 3 seg (Modo coche)" />
+
+        <item android:id="@+id/ruta_corta"
+            android:orderInCategory="100"
+            android:checkable="true"
+            app:showAsAction="never"
+            android:title="Frec 5 seg" />
+
+        <item android:id="@+id/ruta_normal"
+            android:orderInCategory="100"
+            android:checkable="true"
+            android:checked="true"
+            app:showAsAction="never"
+            android:title="Frec 12 seg" />
+
+        <item android:id="@+id/ruta_larga"
+            android:orderInCategory="100"
+            android:checkable="true"
+            app:showAsAction="never"
+            android:title="Frec 25 seg" />
+
+        <item android:id="@+id/seleccionar_tiempo"
+            android:orderInCategory="100"
+            android:checkable="true"
+            app:showAsAction="never"
+            android:title="Seleccionar frecuencia" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/localizable"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Ser localizable ??">
+        <menu>
+            <item android:id="@+id/si_serlocalizable"
+                android:orderInCategory="100"
+                android:checkable="true"
+                android:checked="true"
+                app:showAsAction="never"
+                android:title="SI" />
+            <item android:id="@+id/no_serlocalizable"
+                android:orderInCategory="100"
+                android:checkable="true"
+                app:showAsAction="never"
+                android:title="NO" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/radares"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Gestion radares">
+        <menu>
+            <item android:id="@+id/si_radares"
+                android:orderInCategory="100"
+                android:checkable="true"
+
+                app:showAsAction="never"
+                android:title="SI" />
+            <item android:id="@+id/no_radares"
+                android:orderInCategory="100"
+                android:checkable="true"
+                android:checked="true"
+                app:showAsAction="never"
+                android:title="NO" />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/app_web"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Gestión en Web"/>
+
+    <item android:id="@+id/cerrar_sesion"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Cerrar Sesión"/>
+
+</menu>
