@@ -185,6 +185,7 @@ public class Main2Activity extends AppCompatActivity implements OnFragmentIntera
         mFirebaseDatabase = mFirebaseInstance.getReference("SolicitudesAmistad");
         buscarSolicitudesFirebase();
 
+
     }
 
 
