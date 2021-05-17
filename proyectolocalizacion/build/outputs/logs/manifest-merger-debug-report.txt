@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\0756fe464bce588ee4239d5291d802cb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\aafbbcec1faa265197de0cd17d4d57cb\AndroidManifest.xml:1:70-7:12
 MERGED from [org.adw.library:discrete-seekbar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\3c3006bfb30db5895db4aed4c0aba7f9\AndroidManifest.xml:17:1-30:12
@@ -84,43 +84,43 @@ MERGED from [com.google.android.datatransport:transport-api:2.2.1] C:\Users\chuk
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\3c8f9e90750a692d62486c983ed87159\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\c6dc53a868e04141a48b40bf697d9ff2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\40ebec77351d7000c99668a9efcc8091\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:1-75:12
 	package
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:4:5-50
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:4:5-50
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:6:5-30
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:6:5-30
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:3:5-51
 	xmlns:android
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:5:5-28
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:8:5-10:35
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:8:5-10:35
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:9:9-41
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:9:9-41
 	android:required
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:10:9-32
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:10:9-32
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:12:5-79
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:12:22-76
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:13:5-81
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:13:22-78
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:14:5-67
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\b01a554336b8b9ecc6dd2bb4c2ae69f1\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-gcm:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\b01a554336b8b9ecc6dd2bb4c2ae69f1\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:24:5-67
@@ -148,9 +148,9 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] C:
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\3d32f6ae22d3fa344950e2cb1cbfe19c\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\3d32f6ae22d3fa344950e2cb1cbfe19c\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:14:22-64
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:14:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:15:5-79
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:15:5-79
 MERGED from [com.evernote:android-job:1.4.2] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4625424c4e483735eefdae34e77d3bea\AndroidManifest.xml:13:5-79
 MERGED from [com.evernote:android-job:1.4.2] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4625424c4e483735eefdae34e77d3bea\AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:23:5-79
@@ -180,25 +180,25 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\fe037b9ab26836fef9133035b6607c27\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\fe037b9ab26836fef9133035b6607c27\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:15:22-76
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:15:22-76
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:16:5-79
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:16:5-79
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:16:22-76
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:16:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:17:5-81
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:17:22-78
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:17:22-78
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:18:5-98
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:18:5-98
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:18:22-95
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:18:22-95
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:19:5-80
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:19:22-77
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:19:22-77
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:20:5-68
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:20:5-68
 MERGED from [com.evernote:android-job:1.4.2] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4625424c4e483735eefdae34e77d3bea\AndroidManifest.xml:12:5-68
 MERGED from [com.evernote:android-job:1.4.2] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4625424c4e483735eefdae34e77d3bea\AndroidManifest.xml:12:5-68
 MERGED from [com.google.firebase:firebase-messaging:21.1.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4c19255deb9bd5e8789ca14936e49921\AndroidManifest.xml:23:5-68
@@ -216,13 +216,13 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\b935e1170701a88cfab093cd5e7d5e4a\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\b935e1170701a88cfab093cd5e7d5e4a\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:20:22-65
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:20:22-65
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:21:5-77
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:21:5-77
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:21:22-74
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:21:22-74
 application
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:23:5-73:19
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:23:5-73:19
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\aafbbcec1faa265197de0cd17d4d57cb\AndroidManifest.xml:5:5-19
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\aafbbcec1faa265197de0cd17d4d57cb\AndroidManifest.xml:5:5-19
 MERGED from [org.adw.library:discrete-seekbar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\3c3006bfb30db5895db4aed4c0aba7f9\AndroidManifest.xml:27:5-28:19
@@ -304,97 +304,97 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\37da9518dd0933334484d008f62e5a19\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:27:9-41
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:27:9-41
 	tools:ignore
 		ADDED from [com.evernote:android-job:1.4.2] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\4625424c4e483735eefdae34e77d3bea\AndroidManifest.xml:16:18-44
 	android:icon
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:26:9-43
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:26:9-43
 	android:allowBackup
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:25:9-35
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:25:9-35
 	android:theme
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:28:9-40
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:28:9-40
 	android:usesCleartextTraffic
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:29:9-44
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:29:9-44
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:24:9-44
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:24:9-44
 activity#com.jesusrodri.localizacionproyecto.login_files.RegisterActivity
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:30:9-39:20
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:30:9-39:20
 	android:screenOrientation
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:33:13-49
 	android:label
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:32:13-45
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:32:13-45
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:31:13-57
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:31:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:35:17-69
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:35:25-66
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:37:17-77
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:37:27-74
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:37:27-74
 activity#com.jesusrodri.localizacionproyecto.login_files.LoginActivity
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:40:9-42:52
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:40:9-42:52
 	android:screenOrientation
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:42:13-49
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:42:13-49
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:41:13-54
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:41:13-54
 activity#com.jesusrodri.localizacionproyecto.Main2Activity
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:43:9-49:20
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:43:9-49:20
 	android:screenOrientation
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:45:13-49
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:44:13-42
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:44:13-42
 intent-filter#action:name:android.intent.action.VIEW
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:46:13-48:29
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:46:13-48:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:47:17-69
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:47:25-66
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:47:25-66
 service#com.jesusrodri.localizacionproyecto.MyServiceLocalizacion
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:55:9-58
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:55:9-58
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:55:18-55
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:55:18-55
 service#com.jesusrodri.localizacionproyecto.MyIntentServiceLocalizacion
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:56:9-64
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:56:9-64
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:56:18-61
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:56:18-61
 service#com.jesusrodri.localizacionproyecto.MyServiceRadarSound
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:57:9-56
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:57:9-56
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:57:18-53
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:57:18-53
 service#com.jesusrodri.localizacionproyecto.FirebaseMessagingService
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:59:9-64:19
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:59:9-64:19
 	android:exported
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:60:13-37
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:59:18-58
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:59:18-58
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:61:13-63:29
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:61:13-63:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:62:17-78
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:62:17-78
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:62:25-75
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:62:25-75
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:66:9-68:71
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:66:9-68:71
 	android:value
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:68:13-68
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:68:13-68
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:67:13-62
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:67:13-62
 uses-library#org.apache.http.legacy
-ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:70:9-72:40
+ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:70:9-72:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:33:9-35:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\53c5ce3e3268415476475d1cdb2eb610\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:72:13-37
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:72:13-37
 	android:name
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:71:13-50
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml:71:13-50
 uses-sdk
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\0756fe464bce588ee4239d5291d802cb\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\0756fe464bce588ee4239d5291d802cb\AndroidManifest.xml:20:5-43
 MERGED from [com.mcxiaoke.volley:library-aar:1.0.1] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\aafbbcec1faa265197de0cd17d4d57cb\AndroidManifest.xml:3:5-72
@@ -555,16 +555,16 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chukk\.g
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\c6dc53a868e04141a48b40bf697d9ff2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\40ebec77351d7000c99668a9efcc8091\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\40ebec77351d7000c99668a9efcc8091\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		ADDED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\src\main\AndroidManifest.xml
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:2.0.0] C:\Users\chukk\.gradle\caches\transforms-2\files-2.1\99f80b2d741b6b89952d998a0843be6b\AndroidManifest.xml:12:9-16:66
 	android:label
