@@ -5,7 +5,7 @@ package com.jesusrodri.localizacionproyecto.login_files;
  */
 public class AppConfig {
 
-    //Direcciones relativas a servidor local en pc
+    //Direcciones relativas a servidor local en pc 12
 
     /*
     //Contactos:
