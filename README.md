@@ -1,2 +1,2 @@
 # ProyectoLocalizacion
-Proyecto Localizacion uploaded desde android studio
+Proyecto Localiza Cloud desarrollado para android en java. 
