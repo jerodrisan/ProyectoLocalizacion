@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +52,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -319,7 +325,14 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
 
          if(respuest.equals("si")){
              isRadar_on=true;
-             activar_Radares(respuest);
+             //Metodo A (cargando radares en local, usando newThread ):
+             //activar_RadaresfromAsset();
+             //Metodo B (cargando radares en local usando asyntask):
+             LoadRadarsInBackground loadRadarsInBackground = new LoadRadarsInBackground();
+             loadRadarsInBackground.execute();
+             //Metodo C (desde servidor):
+             //activar_Radares(respuest); //aparece error 403 del servidor
+
          }else if(respuest.equals("no")){
              isRadar_on=false;
              desactivar_Radares();
@@ -335,11 +348,109 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
 
     private ArrayList<Marker> arrayMarkerRadares ;
 
-    public void activar_Radares(String resp){
+    //Metodo B
+    public class LoadRadarsInBackground extends AsyncTask<String, Void, String>{
+        @Override
+        protected String doInBackground(String ... strings) {
+            activar_RadaresfromAsset();
+            return null;
+        }
+        @Override
+        protected void onPostExecute(String json) {
+            super.onPostExecute(json);
+            desplegar_Radares(arrayCoordeRadares);
 
+        }
+    }
+
+
+    public void activar_RadaresfromAsset(){
+        try{
+            //Primero pillamos el json almacenado de la carpeta Assets
+            JSONArray jsonArray1 = new JSONArray(JsonDataFromAsset());
+            //JSONArray jsonArray1 = new JSONArray(string); //string es el json
+            //Dividimos la peninsula en 4 zonas y metemos los radares dependiendo de su localizacion en una de las zonas:
+
+            arrayCoordeRadares = new ArrayList<>();
+            arrayCoordeRadares_NE = new ArrayList<>(); arrayCoordeRadares_NW = new ArrayList<>();
+            arrayCoordeRadares_SE = new ArrayList<>(); arrayCoordeRadares_SW = new ArrayList<>();
+            for (int i=0; i<jsonArray1.length(); ++i){
+
+                JSONObject jsonObject = jsonArray1.getJSONObject(i);
+                String name = jsonObject.getString("name");
+                String coordenadas = jsonObject.getString("Point/coordinates");
+
+                String tipo_radar = name.substring(0,4);
+                String pais_radar = name.substring(9,11);
+                String info_radar = name.substring(12);
+
+                String str[] = coordenadas.split(",");
+                Double longitud = Double.valueOf(str[0]);
+                Double latitud = Double.valueOf(str[1]);
+                Double alti = Double.valueOf(str[2]);
+
+                arrayCoordeRadares.add(new Coord_Long_Lat(longitud, latitud, alti, tipo_radar, pais_radar, info_radar));
+                //Creamos 4 zonas de radares de la peninsula y vamos metiendolos en su zona:
+                if(latitud> 40.00000 && longitud >-4.00000){
+                    arrayCoordeRadares_NE.add((new Coord_Long_Lat(longitud,latitud,alti, tipo_radar, pais_radar, info_radar)));
+                }else if(latitud> 40.00000 && longitud <-4.00000 ){
+                    arrayCoordeRadares_NW.add((new Coord_Long_Lat(longitud,latitud,alti, tipo_radar, pais_radar, info_radar)));
+                }else if (latitud < 40.00000 && longitud >-4.00000){
+                    arrayCoordeRadares_SE.add((new Coord_Long_Lat(longitud,latitud,alti, tipo_radar, pais_radar, info_radar)));
+                }else{ //latitud < 40.00000 && longitud >-4.00000
+                    arrayCoordeRadares_SW.add((new Coord_Long_Lat(longitud,latitud,alti, tipo_radar, pais_radar, info_radar)));
+                }
+            }
+            //Desplegamos los radares en el mapa en un hilo aparte ya que tarda mucho en desplegarse. Aun asi no se soluciona !!! Metodo B
+            /*
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            desplegar_Radares(arrayCoordeRadares);
+                        }
+                    });
+                }
+            }).start();
+            */
+
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    //Recuperamos el archivo radares.json guardado en la carpeta assets
+    private String JsonDataFromAsset(){
+        String json = null ;
+        long start = System.currentTimeMillis();
+        try{
+            InputStream inputStream = getContext().getAssets().open("radares.json");
+            int sizeOfFile = inputStream.available();
+            byte[] bufferData = new byte[sizeOfFile];
+            inputStream.read(bufferData);
+            inputStream.close();
+            json= new String(bufferData,"UTF-8");
+
+        }catch (IOException e){
+            e.printStackTrace();
+            return null;
+        }
+        long end = System.currentTimeMillis();
+        Log.i("time JsonDataFromAsset", String.valueOf(end-start) );
+        return json;
+
+    }
+
+
+    //FUNCION SI QUEREMOS ACTIVAR RADARES QUE ESTAN ALMACENADOS EN EL SERVIDOR. A VECES DA ERROR 403 CON  LO CUAL NO DEJA.
+    //POR ESO SE METEN LOS RADADES EN LA CARPETA ASSETS LOCAL , EN EL ARCHIVO radares.json
+
+    public void activar_Radares(String resp){
         String str = "?radares="+resp;
         String tag_string_req = "req_register";
-
         StringRequest strReq = new StringRequest(Request.Method.GET, AppConfig.URL_GET_RADARES + str, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -352,8 +463,6 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
                     arrayCoordeRadares_SE = new ArrayList<>(); arrayCoordeRadares_SW = new ArrayList<>();
 
                     //Dividimos la peninsula en 4 zonas y metemos los radares dependiendo de su localizacion en una de las zonas:
-
-                    //Log.i("arrayCoordeRadares ", String.valueOf(arrayCoordeRadares.size()));
 
                     for (int i = 0; i < jsonArray1.length(); ++i) {
                         JSONObject jsonObject = jsonArray1.getJSONObject(i);
@@ -370,7 +479,6 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
                         Double alti = Double.valueOf(str[2]);
 
                         arrayCoordeRadares.add(new Coord_Long_Lat(longitud, latitud, alti, tipo_radar, pais_radar, info_radar));
-                       // Log.i("longitud ", String.valueOf(arrayCoordeRadares.get(i).getLongitud()));
                        // Log.i("RADARES NE ", arrayCoordeRadares.get(i).getTipo_radar()+"  "+arrayCoordeRadares.get(i).getPais_radar()+"  "+arrayCoordeRadares.get(i).getInfo_radar());
                         //Creamos 4 zonas de radares de la peninsula y vamos metiendolos en su zona:
 
@@ -388,22 +496,19 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
                             arrayCoordeRadares_SW.add((new Coord_Long_Lat(longitud,latitud,alti, tipo_radar, pais_radar, info_radar)));
                         }
                     }
-                    /*
-                    for (Coord_Long_Lat inforadares: arrayCoordeRadares_NE){
-                        Log.i("RADARES NE ", inforadares.getTipo_radar()+"  "+inforadares.getPais_radar()+"  "+inforadares.getInfo_radar());
-                    }
-                    */
-                    /*
-                    Log.i("longitud total ", String.valueOf((arrayCoordeRadares.size())));
-                    Log.i("longitud NE ", String.valueOf((arrayCoordeRadares_NE.size())));
-                    Log.i("longitud NW ", String.valueOf((arrayCoordeRadares_NW.size())));
-                    Log.i("longitud SE ", String.valueOf((arrayCoordeRadares_SE.size())));
-                    Log.i("longitud SW ", String.valueOf((arrayCoordeRadares_SW.size())));
-                    */
                         //Desplegamos los radares en el mapa :
-                    desplegar_Radares(arrayCoordeRadares);
 
-
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                                public void run() {
+                                    desplegar_Radares(arrayCoordeRadares);
+                                }
+                            });
+                        }
+                     }).start();
 
                 }catch (JSONException e){
                     e.printStackTrace();
@@ -414,23 +519,20 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_LONG).show();
-
             }
         });
         MyApplication.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
 
+
+    //ESTE ES EL METODO QUE RALENTIZA EL PROCESO!!! , UNOS 7 SEGUNDOS. AVERIGUAR COMO PONERLO EN SEGUNDO PLANO PARA QUE NO BLOQUEE EL UI
     Marker markerRadar = null;
     private void desplegar_Radares( ArrayList<Coord_Long_Lat> arrayCoordeRadares){
-
         arrayMarkerRadares = new ArrayList<>();
        // Log.i("arrayMarkerRadares ", String.valueOf(arrayMarkerRadares.size()));
         for (Coord_Long_Lat arrayRad: arrayCoordeRadares){
-
             String tipo_radar = arrayRad.getTipo_radar();
-
             switch (tipo_radar){
-
                 case "SEMA":
                     tipo_radar = "Radar SEMAFORO";
                     break;
@@ -512,15 +614,12 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
                 default:
                     tipo_radar= "Sin información";
             }
-
             markerRadar = mapa.addMarker(new MarkerOptions().
                     position(new LatLng(arrayRad.getLatitud(), arrayRad.getLongitud())).
                      title(tipo_radar).snippet(arrayRad.getInfo_radar()).
                             icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
             markerRadar.showInfoWindow();
-
             arrayMarkerRadares.add(markerRadar); //Metemos todos los radares en un array
-
         }
         //prueba distancias google vs calculadora de distancias app:
        // Double lat1 = 40.447928, long1 = -3.543301, lat2 = 40.44718, long2 = -3.53788;
@@ -528,7 +627,6 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
 
         //Vemos posicion de radares como informacion cuando hacemos click
         mapa.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-
             @Override
             public boolean onMarkerClick(Marker marker) {
                 //Log.i("posicion marker", String.valueOf(marker.getPosition().latitude) +"   "+ String.valueOf(marker.getPosition().longitude));
@@ -538,6 +636,7 @@ public class Fragment_Mapa extends Fragment implements OnActivityInteractionList
                 return true;
             }
         });
+
     }
 
     private void desactivar_Radares(){

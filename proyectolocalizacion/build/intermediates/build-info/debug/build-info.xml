@@ -1,110 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="28"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="29"
     build-mode="FULL"
-    density="420dpi"
+    density="440dpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1620602383584"
-    token="-1256224190228914220"
+    timestamp="1656891023149"
+    token="-5761454632393210598"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2145" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="73" />
+        duration="0" />
     <task
         name="verifier"
-        duration="72" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\instant-run-apk\debug\proyectolocalizacion-debug.apk"
+        location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\instant-run-apk\debug\proyectolocalizacion-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1620602383584"
+        timestamp="1656891023149"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\chukk\Desktop\proyecto localizacion\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\instant-run-apk\debug\proyectolocalizacion-debug.apk"
+            location="C:\Users\chukk\Desktop\proyectos\ProyectoLocalizacion\proyectolocalizacion\build\intermediates\instant-run-apk\debug\proyectolocalizacion-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

@@ -73,7 +73,9 @@ public class MyIntentServiceLocalizacion extends Service implements
     private GoogleApiClient mGoogleApiClient;
     FusedLocationProviderClient flp_cliente;
     private com.google.android.gms.location.LocationListener listener;
-    private long UPDATE_INTERVAL = 1000;  /* 5 secs */
+    private long UPDATE_INTERVAL = 5000;  /* 5 secs */
+    private int MIN_DISTANCE_BETWEEN_LOCATION_UPDATES = 5; //distacia minima entre actualizaciones en metros
+
     public OnServiceInterationListener sListener;
     private final IBinder mBinder = new MyIntentServiceLocalizacion.MyBinder();
 
@@ -149,7 +151,7 @@ public class MyIntentServiceLocalizacion extends Service implements
     LocationCallback mLocationCallback = new LocationCallback(){
         @Override
         public void onLocationResult(LocationResult locationResult) {
-
+            Log.i("frecuencia", String.valueOf(frecuenceTime));
             for(Location location : locationResult.getLocations()){
                 //Log.i("frecuencias ", String.valueOf(location.getLatitude()));
                 //Toast.makeText(getApplicationContext(), "Localizacion "+String.valueOf(location.getLatitude()), Toast.LENGTH_SHORT).show();
@@ -170,6 +172,7 @@ public class MyIntentServiceLocalizacion extends Service implements
 
                     //En caso de que tengamos activada la localizacion, subimos los datos al servidor
                     if(sessionManager.get_isLocalizable()){
+                        //Log.i("frecuencia", String.valueOf(frecuenceTime));
                         subir_Coordenadas_Volley(arrayCoorde);
                     }
 
@@ -187,17 +190,19 @@ public class MyIntentServiceLocalizacion extends Service implements
     //Quitamos el warning ya que hemos usado en la clase Fragment_localizacion el permiso en tiempo de ejecucion al igual que en Fragmen_Mapa
     @SuppressWarnings({"MissingPermission"})
     protected void startLocationUpdates() {
+
         // Create the location request
         LocationRequest mLocationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
-                .setFastestInterval(frecuenceTime) //ver diferencia entre setinterval() y setfastestInterval()
-                .setInterval(UPDATE_INTERVAL);
-               // .setFastestInterval(FASTEST_INTERVAL);
+                //.setFastestInterval(UPDATE_INTERVAL) //ver diferencia entre setinterval() y setfastestInterval()
+                //.setFastestInterval(frecuenceTime)
+                .setSmallestDisplacement(MIN_DISTANCE_BETWEEN_LOCATION_UPDATES)
+                .setInterval(frecuenceTime);
+
 
         // Request location updates
         flp_cliente.requestLocationUpdates(mLocationRequest,mLocationCallback,null);
-       // LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this); //DEPRECADA FusedLocationApi
-        //Log.d("startlocation", "--->>>>");
+
     }
 
     /*
@@ -249,26 +254,6 @@ public class MyIntentServiceLocalizacion extends Service implements
         final String param_server="subir_coordenadas";
         // Tag used to cancel the request
         String tag_string_req = "req_register";
-        /* En caso de usar GET
-        StringBuilder str = new StringBuilder();
-        String str1 = "?param=" + param_server;
-        str.append(str1);
-        for(Coord_subir coor: arrayCoorde){
-            String lati = String.valueOf(coor.getLatitud());
-            String longi = String.valueOf(coor.getLongitud());
-            String alti =String.valueOf(coor.getAltitud());
-            String id = coor.getid();
-            String sesion_num =String.valueOf(coor.getSesionNum());
-            String date = coor.getDate();
-
-            str.append("&latitud[]="+longi+
-                        "&longitud[]="+lati+
-                        "&altitud[]="+alti+
-                        "&id[]="+id+
-                        "&sesion_num[]="+sesion_num+
-                        "&date[]="+date);
-        }
-        */
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 AppConfig.URL_PARAM_COORDENADAS , new Response.Listener<String>() {
 

@@ -127,21 +127,6 @@ public class MyServiceLocalizacion extends Service{
         arrayCadFecha = new ArrayList<>();
         setNotification();
         comenzarLocalizacion(numsesion, numsesion_db, id_cliente);
-
-        //Log.i("servicio", "comenzado");
-        /*
-        pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "GpsTrackerWakelock");
-        wl.acquire();
-        */
-        /*
-        alarma = new AlarmaRecibidor();
-        alarma.setAlarm(getApplicationContext());
-        */
-       // keepAwake();
-       // handler.post(periodicUpdate);
-
-
         return START_NOT_STICKY;
     }
 
@@ -246,9 +231,10 @@ public class MyServiceLocalizacion extends Service{
        // wl.release();
     }
 
+
+
     LocationListener locListener;
     private void comenzarLocalizacion(final int num_sesion, final int num_sesion_db, final String id_cliente){
-
 
         loc0=null;
         cadFecha0="";
@@ -285,6 +271,9 @@ public class MyServiceLocalizacion extends Service{
         //Log.i("frecuencia", String.valueOf(frecuenceTime));
         // distancia min entre actualizaiones en metros, instancia del objeto location listener)
         locManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, frecuenceTime, 0, locListener); // actualiza cada 15 seg
+
+
+
     }
 
 
@@ -395,26 +384,6 @@ public class MyServiceLocalizacion extends Service{
         final String param_server="subir_coordenadas";
         // Tag used to cancel the request
         String tag_string_req = "req_register";
-        /* En caso de usar GET
-        StringBuilder str = new StringBuilder();
-        String str1 = "?param=" + param_server;
-        str.append(str1);
-        for(Coord_subir coor: arrayCoorde){
-            String lati = String.valueOf(coor.getLatitud());
-            String longi = String.valueOf(coor.getLongitud());
-            String alti =String.valueOf(coor.getAltitud());
-            String id = coor.getid();
-            String sesion_num =String.valueOf(coor.getSesionNum());
-            String date = coor.getDate();
-
-            str.append("&latitud[]="+longi+
-                        "&longitud[]="+lati+
-                        "&altitud[]="+alti+
-                        "&id[]="+id+
-                        "&sesion_num[]="+sesion_num+
-                        "&date[]="+date);
-        }
-        */
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 AppConfig.URL_PARAM_COORDENADAS , new Response.Listener<String>() {
 
@@ -461,47 +430,6 @@ public class MyServiceLocalizacion extends Service{
         };
         MyApplication.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
-     /*
-    Handler handler = new Handler();
-    private Runnable periodicUpdate = new Runnable() {
-        @Override
-        public void run() {
-            handler.postDelayed(periodicUpdate, 1000); // schedule next wake up every second
-            Intent notificationIntent = new Intent(MyServiceLocalizacion.this, MyServiceLocalizacion.class);
-            PendingIntent pendingIntent = PendingIntent.getActivity(MyServiceLocalizacion.this, 0, notificationIntent, 0);
-            AlarmManager keepAwake = (AlarmManager) getSystemService(ALARM_SERVICE);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-                keepAwake.setExactAndAllowWhileIdle(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime()+1000, pendingIntent);
-            }
-            //keepAwake.setExact(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime()+1000, pendingIntent);
 
-            long current = System.currentTimeMillis();
-            if ((current-current%1000)%(1000*10)  == 0) { // record on every tenth seconds (0s, 10s, 20s, 30s...)
-                // whatever you want to do
-                subir_Coordenadas_Volley(-3.7321920306774, 40.423550717, 617.5733036628, "577967969cf882.34920319",
-                        20, "2016-07-17 12:51:32");
-            }
-        }
-    };
-    */
-
-    /*
-    public void keepAwake (){
-
-        Intent alarmIntent = new Intent(this, AlarmaRecibidor.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
-        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-
-        long triggerAtTime = SystemClock.elapsedRealtime() + (6 * 60 * 1000);
-        int interval = 6000;
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, interval, pendingIntent);
-        }
-
-       // alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval, pendingIntent);
-        Toast.makeText(this, "Alarm Set", Toast.LENGTH_LONG).show();
-    }
-    */
 
 }
